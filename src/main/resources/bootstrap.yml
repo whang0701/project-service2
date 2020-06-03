@@ -1,0 +1,12 @@
+
+spring:
+  application:
+    name: project-service2
+
+server:
+  port: 8803
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8800/eureka/ #eureka服务注册地址
