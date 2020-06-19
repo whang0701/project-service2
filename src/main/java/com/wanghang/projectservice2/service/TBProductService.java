@@ -50,7 +50,7 @@ public class TBProductService extends AbstractProductService<TBProduct> {
         product.setName(tbProduct.getTb_name());
         product.setType(tbProduct.getTb_type());
         ProductType type = ProductType.getType(tbProduct.getTb_type());
-        product.setTypeName(Objects.nonNull(type)? type.getValue() : "其它");
+        product.setTypeName(Objects.nonNull(type) ? type.getValue() : "其它");
         product.setBrand(tbProduct.getTb_brand());
         product.setPrice(tbProduct.getTb_price());
         product.setImg0(tbProduct.getTb_img0());
